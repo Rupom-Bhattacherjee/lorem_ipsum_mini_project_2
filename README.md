@@ -56,8 +56,9 @@
     19 - Euribor3m: euribor 3 month rate - daily indicator (numeric)
     20 - Nr.employed: number of employees - quarterly indicator (numeric)
     
-### Descriptive Analysis
+### EDA
 
+- The regular Python language is used for EDA. 
 - We have two types of variables in our data set. These are Continuous Variables and Categorical Variables. 
 
 #### Continuous Variables
@@ -65,73 +66,61 @@
 - 'age‘ , 'duration', 'campaign', ‘pdays ‘, 'previous', 'emp.var.rate‘
 'cons.price.idx', 'cons.conf.idx', 'euribor3m', 'nr.employed'
 
+##### Summary stat of Continuous Variables
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/summary_stat.jpg)
+
+##### Visualizing – Continuous Variables
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/vis_num.png)
+
+###### Correlations for Continuous Variables
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/vis_corr_matrix.png)
+
 #### Categorical Variables
 
 - 'job', 'marital', 'education', 'default', 'housing', 'loan’
 'contact', 'month', 'day_of_week', 'poutcome', 'y'
 
-### Visualizing – Categorical Variables
+##### Visualizing – Categorical Variables
 ![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/vis_cat.png)
 
-### Visualizing – Continuous Variables
-![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/vis_num.png)
+#### Missing values
+There isn’t Null/Missing values in the dataset, but we have unknown values for few categorical variables as seen in the visualization above. We kept the unknown values as they are. Because, these information is not known during a call is performed.
+![]https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/missing_values.jpg
 
-### Correlations
-![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/vis_corr_matrix.png)
+### Data Preprocessing and Feature Engineering
 
-### Data Manipulation
+#### Principal Component Analysis and Oversampling
 
-- We found a high correlation between 4 columns based on the Heat Map  Method. These columns are cons.price.idx, euribor3m, nr.employed,emp.var.rate. Therefore we applied PCA to remove the multicolinearity.
+- From our  [descriptive study](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/descriptive_mini_project%20(2).ipynb) we found a high correlation between 4 columns based on the Heat Map Method. These columns are cons.price.idx, euribor3m, nr.employed,emp.var.rate. Therefore we applied [PCA](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/mini_project%20(2)%20smote%20copy.ipynb) on the numerical columns with 99% covariance to remove the multicolinearity between them.
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/pca_99.png)
 
-- The dataset is also unbalanced regarding the target variable. So we oversampled the data.
+- The dataset is also unbalanced regarding the target variable (36,548 y_no vs 4640 y_yes). So we oversampled the traing data using smote module from python imblearn library. In oversampling, for every observation in the majority class, we randomly select an observation from the minority class with replacement. The end result is the same number of observations from the minority and majority classes. The notebook for PCA and SMOTE analysis can be found [here](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/mini_project%20(2)%20smote%20copy.ipynb). The following figure shows the distribution of target variable in the training set before and after oversampling.
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/smote_result.png)
  
-#### One-Hot Encoding
+ 
+#### String Indexing and One-Hot Encoding
 
-We applied One Hot Encoding method to categorical data with using get dummies function. One hot encoding is a process by which categorical variables are converted into matrix form with 1 and 0 values.
+We applied One Hot Encoding method to categorical data with using string indexing. One hot encoding is a process by which categorical variables are converted into matrix form with 1 and 0 values.
+
+#### Vector Assembler
+We used vector assembler method of PySpark to put all the features in one vector.  
 
 #### Data Normalization
 
-We normalized our numerical data as data preparation. The goal of normalization is to change the values of numeric columns in the data set to use a common scale, without distorting differences in the ranges of values or losing information. We used MinMaxScaler function.
+- We normalized our numerical data using standard scaler function of PySpark. The goal of normalization is to change the values of numeric columns in the data set to use a common scale, without distorting differences in the ranges of values or losing information.
 
-#### Unknown Values
+- String indexing, one hot encoding, vector assembling, and data normalization are done using a pipeline in PySpark. Before normalizing, the dataset is split in train and test set (80/20) and then normalization is done on training data and transformed in test data. 
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/pipeline.jpg)
 
-There isn’t Null values but we have unknown values. We kept unknown values . Because, these information is not known during a call is performed.
 
-#### Test-Train Data Split
+#### Modeling
+- Logistic Regression (base model) without PCA and Oversampling
+- Logistic Regression with PCA and oversampled train data
+- Decision Tree Classifier
+- Random Forest Classifier
 
-First step is spliting data into two and selected randomly %80 of data as Training set and %20 of data as Test Set on Python
 
-#### Upsampling
-
-Second step is upsampling to handle unbalanced data. We realized that we have mostly ‘no’ outcome on our dataset.
-In upsampling, for every observation in the majority class, we randomly select an observation from the minority class with replacement. The end result is the same number of observations from the minority and majority classes.
 
 ## Logistic Regression
 - We applied Logistic Regression algorithm which is the most commonly used algorithm for solving all classification problems.
 
-![](https://github.com/gogundur/Classification/blob/master/images/logistic%20regression.png)
-
-## K Nearest Neighbors
-- As the second algorithm, we used K Nearest neighbors which is widely used in classification problems because of Ease to interpret output, Calculation time, Predictive Power
-![](https://github.com/gogundur/Classification/blob/master/images/knearest%20neighbors.png)
-
-## Random Forest
-- As We applied the Random Forest as the third algorithm. RF are among the most popular ML methods because of their relatively good accuracy, robustness and ease of use.
-
-![](https://github.com/gogundur/Classification/blob/master/images/random%20forest.png)
-
-- To get the feature importance scores, we used feature_importances_ function of RandomForestClassifier library. The most important feature of our dataset is X_factor.
-
-![](https://github.com/gogundur/Classification/blob/master/images/random%20forest%20feature.png)
-
-## Summary
-    In conclusion, Logistic Regression algorithm has better performance than other algorithms. 
-
-    Minimum MSE ( Predict target variable with minimal error )
-    Max Cohen Kappa Score (Controlling accuracy of  the model and compares an Observed Accuracy with an Expected Accuracy (random chance))
-    Max Matthew Score (quantifying the quality of predictions)
-    Max Accuracy (high accuracy predict the labeled values)
-    Max Precision (high accuracy of positive predictions)
-    Max Recall (high accuracy predict the target value)
-    
-![](https://github.com/gogundur/Classification/blob/master/images/summary.png)
