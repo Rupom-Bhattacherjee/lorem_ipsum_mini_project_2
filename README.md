@@ -121,31 +121,31 @@ We used vector assembler method of PySpark to put all the features in one vector
 
 
 #### Modeling
-Following are the predictive models used to identify if the client will subscribe (yes/no) a term deposit (variable y). In addition we find the optimum probability threshold which provides the maximum F1 score. The confusion matrix in test set for each models are also shown below. Detailed code for the modeling can be found in this PySpark [Notebook](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/logreg.ipynb)
+Following are the predictive models used to identify if the client will subscribe (yes/no) a term deposit (variable y). The confusion matrix in test set for each models are also shown below. Detailed code for the modeling can be found in this PySpark [Notebook](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/logreg.ipynb)
 
 - Logistic Regression 
 <p align="center">
-<img width="800" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_log_reg.png">  
+<img width="300" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_log_reg.png">  
 </p> 
 
 - Decision Tree Classifier
 <p align="center">
-<img width="800" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_dt.png">  
+<img width="300" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_dt.png">  
 </p> 
 
 - Random Forest Classifier
 <p align="center">
-<img width="800" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_RF.png">  
+<img width="300" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_RF.png">  
 </p> 
 
 - Gradient Boosted Decision Trees
 <p align="center">
-<img width="800" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_gbdt.png">  
+<img width="300" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_gbdt.png">  
 </p> 
 
 - Factorization ML classifier
 <p align="center">
-<img width="800" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_FMC.png">  
+<img width="300" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_FMC.png">  
 </p> 
 
 ##### Model Comparison
@@ -159,11 +159,6 @@ The best Model is Logistic Regression. The following is the test ROC curve:
 <img width="385" alt="image" src="https://user-images.githubusercontent.com/28525282/202321240-9c709acb-9900-47dc-8661-2c6f7740eadd.png">
 </p>
 
-We further analyse the Standard Coefficients of variables to identify variables that are most important
-
-<img width="522" alt="image" src="https://user-images.githubusercontent.com/28525282/202358351-85916c61-c64e-451d-88ce-33ea4b6f150a.png">
-
-
 ## Kmeans Clustering
 We initially decided on the number of clusters using Silhouette scores. We arrived at 3 clusters
 
@@ -175,9 +170,15 @@ Here is the cluster plot based on the Principal components with most explained v
 
 ## Prescriptive Recomendations 
 
-The efficiency of any marketing campaign is contingent on the efficacy of its Lead Generation mechanism. It directly correlates to workforce productivity, communication cost, strategic planning and even custmer brand judgement. Keeping this in mind, this study looks to design an effective mechanism of lead generation that the marketing team can leverage for higher return on investment. The key takeaways include:
+The efficiency of any marketing campaign is contingent on the efficacy of its Lead Generation mechanism. It directly correlates to workforce productivity, communication cost, strategic planning and even customer brand judgement. Keeping this in mind, this study looks to design an effective mechanism of lead generation that the marketing team can leverage for higher return on investment. The key takeaways include:
 
 * The first reach-out to potential customers has the highest likelihood of lead conversion. In light of this, most of the marketing/sales workforce must be committed to first time leads. An additional intricacy to workforce management can be deploying highly rated efficient marketing/sales workforce to first time leads and the others to follow-up calls. 
 * The duration of the call with the potential customer is positively related to lead conversion. Training programs aimed at the marketing/sales workforce being able to hold conversations with clients must be pushed by the bank. 
-* 
+* The marketing team needs to closely monitor the monthly Consumer Confidence Index. Our study finds that in periods of rising interest rates, consumers are more likely to purchase term deposits since the increased cost of borrowing makes savings more attractive. An aggressive strategy must be adopted by the marketing/sales team during these monthly sprints. Additionally, younger people (Age 32-38) are more likely to purchase term deposits during these times of downturn and this age group must be targetted strategically in this period. 
+* Monday, Tuesday and Thursday are the days of the week when lead conversion usually dips while weekends have a greater conversion rate. Workforce management wherein the marketing and sales team are deployed heavily during high productivity days and given time off during downturn days is suggested.
+* Profiling the potential customers by their occupation also has a high impact on lead generation. Blue collar workers are less likely to purchase term deposits. 
+* Credit reports of potential customers needs to be analyzed for lead generation. Individuals with a housing loan are less likely to purchase term deposits. 
+* Educa
+
+consumer confidence index - monthly 
 
