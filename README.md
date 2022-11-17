@@ -88,12 +88,24 @@ Inferences:
 ###### Correlations for Continuous Variables
 ![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/vis_corr_matrix.png)
 
+Inferences: 
+
+High correlation between 4 columns based on the Heat Map Method
+
+* cons.price.idx
+* Euribor3m
+* nr.employed
+* emp.var.rate
+
+We will conduct PCA to combat the multicollinearity problem
+
+
 #### Categorical Variables
 
 - 'job', 'marital', 'education', 'default', 'housing', 'loan’
 'contact', 'month', 'day_of_week', 'poutcome', 'y'
 
-##### Visualizing – Categorical Variables
+#### Visualizing – Categorical Variables
 ![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/vis_cat.png)
 
 
