@@ -1,6 +1,6 @@
 # lorem_ipsum_mini_project_2
  # Term Deposit Opening Decision
- ### AGENDA
+ ### Outline
 - DataSet 
     - DataSet Information
     - Attribute Information
@@ -14,11 +14,13 @@
     - Data Normalization
     - Principal Component Analysis
 - Predictive Analysis
-    - Logistic Regression (Base Model)
-    - Logistic Regression with PCA and data oversampling
-    - Random Forest
-    - KNN
+    - Logistic Regression 
+    - Decision Tree Classifier
+    - Gradient Boosted Decision Trees
+    - Random Forest Classifier
+    - Factorization ML classifier
 - Summary
+
 ### Dataset Information
 
 - The data is related with direct marketing campaigns of a banking institution. The marketing campaigns were based on phone calls.
@@ -89,15 +91,17 @@ There isn’t Null/Missing values in the dataset, but we have unknown values for
 
 ### Data Preprocessing and Feature Engineering
 
-#### Principal Component Analysis and Oversampling
+#### Principal Component Analysis
 
 - From our  [descriptive study](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/descriptive_mini_project%20(2).ipynb) we found a high correlation between 4 columns based on the Heat Map Method. These columns are cons.price.idx, euribor3m, nr.employed,emp.var.rate. Therefore we applied [PCA](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/data_processing_pca_smote.ipynb) on the numerical columns with 99% covariance to remove the multicolinearity between them.
 ![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/pca_99.png "Co-variance thresholding")
 
 The following figure shows the loadings of each principal components:
+
 ![alt text](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/pca_loadings.jpeg "loadings of each principal components")
 
 - The dataset is also unbalanced regarding the target variable (36,548 y_no vs 4640 y_yes). So we oversampled the traing data using smote module from python imblearn library. In oversampling, for every observation in the majority class, we randomly select an observation from the minority class with replacement. The end result is the same number of observations from the minority and majority classes. The notebook for PCA and SMOTE analysis can be found [here](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/mini_project%20(2)%20smote%20copy.ipynb). The following figure shows the distribution of target variable in the training set before and after oversampling.
+
 ![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/smote_result.png)
  
  
@@ -117,11 +121,20 @@ We used vector assembler method of PySpark to put all the features in one vector
 
 
 #### Modeling
+Following are the predictive models used to identify if the client will subscribe (yes/no) a term deposit (variable y). The confusion matrix in test set for each models are also shown below. Detailed code for the modeling can be found in this PySpark [Notebook](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/logreg.ipynb)
+
 - Logistic Regression
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_log_reg.png)
 - Decision Tree Classifier 
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_dt.png)
 - Random Forest Classifier
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_RF.png)
 - Gradient Boosted Decision Trees
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_gbdt.png)
 - Factorization ML classifier
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_FMC.png)
+
+##### Model Comparison
 <img width="534" alt="image" src="https://user-images.githubusercontent.com/28525282/202321298-6946f69a-bc20-4e3b-bee4-6c102c904185.png">
 
 
@@ -143,11 +156,5 @@ Here is the cluster plot based on the Principal components with most explained v
 
 <img width="419" alt="image" src="https://user-images.githubusercontent.com/28525282/202334019-9b86f00f-44dd-4c0d-97a9-a318f78d7ea6.png">
 
-## Prescriptive Recomendations
 
-Lead Generation is an effective technique to make team operations more efficient and effective. We approached this by scrutinizing the features that were deemed most important through our modeling. A combination of independent features and components of the important principal component values we analyzed for the purpose of these recomendations. Our findings were as follows:
-
-* It is of upmost importance to get the first contact with potential clients on-point. The chances of conversion is high during the first call with the recievers. Furthermore, it is also important to engage the clients in a longer conversation since this has a positive correlation with a positive lead conversion. 
-
-*
 
