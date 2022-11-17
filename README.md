@@ -114,8 +114,6 @@ We used vector assembler method of PySpark to put all the features in one vector
 
 
 #### Modeling
-- Logistic Regression (base model) without PCA and scaling
-With PCA and scaling
 - Logistic Regression
 - Decision Tree Classifier 
 - Random Forest Classifier
