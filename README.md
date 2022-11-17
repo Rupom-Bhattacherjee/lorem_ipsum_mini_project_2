@@ -125,8 +125,7 @@ With PCA and scaling
 
 The best Model is Logistic Regression. The following is the test ROC curve
 
-
-<img width="388" alt="image" src="https://user-images.githubusercontent.com/28525282/202320984-646b2f66-2c10-4e30-b679-96aa292703da.png">
+<img width="534" alt="image" src="https://user-images.githubusercontent.com/28525282/202321171-d3f0617e-51cb-46ed-bf56-30899d5aca58.png">
 
 
 ## Logistic Regression
