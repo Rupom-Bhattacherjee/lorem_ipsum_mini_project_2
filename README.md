@@ -121,11 +121,12 @@ With PCA and scaling
 - Random Forest Classifier
 - Gradient Boosted Decision Trees
 - Factorization ML classifier
-<img width="508" alt="image" src="https://user-images.githubusercontent.com/28525282/202320624-e7726772-f70d-41a9-a9c6-cce80f0514e1.png">
+<img width="534" alt="image" src="https://user-images.githubusercontent.com/28525282/202321298-6946f69a-bc20-4e3b-bee4-6c102c904185.png">
+
+
 
 The best Model is Logistic Regression. The following is the test ROC curve
-
-<img width="534" alt="image" src="https://user-images.githubusercontent.com/28525282/202321171-d3f0617e-51cb-46ed-bf56-30899d5aca58.png">
+<img width="385" alt="image" src="https://user-images.githubusercontent.com/28525282/202321240-9c709acb-9900-47dc-8661-2c6f7740eadd.png">
 
 
 ## Logistic Regression
