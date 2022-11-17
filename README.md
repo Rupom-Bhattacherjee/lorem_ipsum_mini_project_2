@@ -188,12 +188,14 @@ The best Model is Logistic Regression with the highest AUC score. The following 
 
 ## Kmeans Clustering
 We initially decided on the number of clusters using Silhouette scores. The notebook for KNN can be found [here](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/ModelcomparisonandKmeans.ipynb). We arrived at 3 clusters:
-
+<p align="center">
 <img width="320" alt="image" src="https://user-images.githubusercontent.com/28525282/202333392-9ef30b91-7e2a-46c4-bd12-b589a695fd12.png">
-
+</p> 
 Here is the cluster plot based on the Principal components with most explained variance.
-
+<p align="center">
 <img width="419" alt="image" src="https://user-images.githubusercontent.com/28525282/202334019-9b86f00f-44dd-4c0d-97a9-a318f78d7ea6.png">
+</p>
+PC1 refers to socio-economic factors such as euribo3m, emp_var_rate. PC2 has to previous customer interaction such as Pdays (days since last contact) and Previous (No of contacts in the previous campaigns). Using the segmentation of our clientele we can devise a flexible marketing strategy which would cater to different clientele in different economic condition
 
 ## Prescriptive Recomendations 
 
