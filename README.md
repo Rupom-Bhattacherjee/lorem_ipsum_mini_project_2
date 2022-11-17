@@ -85,6 +85,35 @@
 ##### Visualizing – Categorical Variables
 ![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/vis_cat.png)
 
+Inferences: 
+
+* The features are highly skewed. Hence, we need to perform scaling on all these data points.
+
+* From the Pdays and Previous univariate distribution we can see that most of the clients in the dataset haven't been contacted in the current and previous campaigns
+
+* Duration of the call is right skewed, with most calls ending early. 
+
+* We did not find any null values
+
+
+![image](https://user-images.githubusercontent.com/89224562/202365895-b7bde68a-661f-4ed2-9de0-405812ba8799.png)
+
+High correlation between 4 columns based on the Heat Map Method
+
+* cons.price.idx
+Euribor3m
+nr.employed
+emp.var.rate
+
+We will conduct PCA to combat the multicollinearity
+
+![image](https://user-images.githubusercontent.com/89224562/202366135-5234edd0-08d5-4b04-bb98-53f1077779ee.png)
+
+
+
+![Uploading image.png…]()
+
+
 #### Missing values
 There isn’t Null/Missing values in the dataset, but we have unknown values for few categorical variables as seen in the visualization above. We kept the unknown values as they are. Because, these information is not known during a call is performed.
 ![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/missing_values.jpg)
