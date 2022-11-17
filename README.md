@@ -123,29 +123,41 @@ We used vector assembler method of PySpark to put all the features in one vector
 #### Modeling
 Following are the predictive models used to identify if the client will subscribe (yes/no) a term deposit (variable y). The confusion matrix in test set for each models are also shown below. Detailed code for the modeling can be found in this PySpark [Notebook](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/logreg.ipynb)
 
-- Logistic Regression
-<img src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_log_reg.png" width="300">
-- Decision Tree Classifier 
-<img src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_dt.png" width="300">
+- Logistic Regression 
+<p align="center">
+<img width="300" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_log_reg.png">  
+</p> 
+
+- Decision Tree Classifier
+<p align="center">
+<img width="300" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_dt.png">  
+</p> 
+
 - Random Forest Classifier
-<img src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_RF.png" width="300">
+<p align="center">
+<img width="300" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_RF.png">  
+</p> 
+
 - Gradient Boosted Decision Trees
-<img src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_gbdt.png" width="300">
+<p align="center">
+<img width="300" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_gbdt.png">  
+</p> 
+
 - Factorization ML classifier
-<img src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_FMC.png" width="300">
+<p align="center">
+<img width="300" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_FMC.png">  
+</p> 
 
 ##### Model Comparison
-<img width="534" alt="image" src="https://user-images.githubusercontent.com/28525282/202321298-6946f69a-bc20-4e3b-bee4-6c102c904185.png">
+<p align="center">
+ <img width="534" alt="image" src="https://user-images.githubusercontent.com/28525282/202321298-6946f69a-bc20-4e3b-bee4-6c102c904185.png">
+</p> 
 
 
-
-The best Model is Logistic Regression. The following is the test ROC curve
-
+The best Model is Logistic Regression. The following is the test ROC curve:
+<p align="center">
 <img width="385" alt="image" src="https://user-images.githubusercontent.com/28525282/202321240-9c709acb-9900-47dc-8661-2c6f7740eadd.png">
-
-
-## Logistic Regression
-- We applied Logistic Regression algorithm which is the most commonly used algorithm for solving all classification problems.
+</p>
 
 ## Kmeans Clustering
 We initially decided on the number of clusters using Silhouette scores. We arrived at 3 clusters
