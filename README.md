@@ -160,7 +160,7 @@ The best Model is Logistic Regression. The following is the test ROC curve:
 </p>
 
 ## Kmeans Clustering
-We initially decided on the number of clusters using Silhouette scores. We arrived at 3 clusters
+We initially decided on the number of clusters using Silhouette scores. The notebook for KNN can be found [here](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/ModelcomparisonandKmeans.ipynb) We arrived at 3 clusters:
 
 <img width="320" alt="image" src="https://user-images.githubusercontent.com/28525282/202333392-9ef30b91-7e2a-46c4-bd12-b589a695fd12.png">
 
