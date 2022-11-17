@@ -125,36 +125,37 @@ Following are the predictive models used to identify if the client will subscrib
 
 - Logistic Regression 
 <p align="center">
-<img width="300" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_log_reg.png">  
+<img width="800" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_log_reg_2.png">  
 </p> 
 
 - Decision Tree Classifier
 <p align="center">
-<img width="300" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_dt.png">  
+<img width="800" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_dt_2.png">  
 </p> 
 
 - Random Forest Classifier
 <p align="center">
-<img width="300" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_RF.png">  
+<img width="800" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_RF_2.png">  
 </p> 
 
 - Gradient Boosted Decision Trees
 <p align="center">
-<img width="300" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_gbdt.png">  
+<img width="800" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_gbdt_2.png">  
 </p> 
 
 - Factorization ML classifier
 <p align="center">
-<img width="300" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_FMC.png">  
+<img width="800" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_FMC_2.png">  
 </p> 
 
 ##### Model Comparison
+Logistic Regression outperformed all the other models with higher ROC_AUC score as well as with better precision and F1 score. As far as sensitivity of the models are concerned, Gradient Boosted model outperfomed all the other models, but it had the lowest precision score. Therefore, Logistic Regression is chosen as the best performing classification model for this study. The model comparison is shown in the following table:
+
 <p align="center">
  <img width="534" alt="image" src="https://user-images.githubusercontent.com/28525282/202321298-6946f69a-bc20-4e3b-bee4-6c102c904185.png">
 </p> 
 
-
-The best Model is Logistic Regression. The following is the test ROC curve:
+The following is the test ROC curve with the Logistic Regression model:
 <p align="center">
 <img width="385" alt="image" src="https://user-images.githubusercontent.com/28525282/202321240-9c709acb-9900-47dc-8661-2c6f7740eadd.png">
 </p>
@@ -168,10 +169,5 @@ Here is the cluster plot based on the Principal components with most explained v
 
 <img width="419" alt="image" src="https://user-images.githubusercontent.com/28525282/202334019-9b86f00f-44dd-4c0d-97a9-a318f78d7ea6.png">
 
-## Prescriptive Recomendations 
 
-The efficiency of any marketing campaign is contingent on the efficacy of its Lead Generation mechanism. It directly correlates to workforce productivity, communication cost, strategic planning and even custmer brand judgement. Keeping this in mind, this study looks to design an effective mechanism of lead generation that the marketing team can leverage for higher return on investment. The key takeaways include:
-
-* The first reach-out to potential customers has the highest likelihood of lead conversion. In light of this, most of the marketing/sales workforce must be committed to first time leads. An additional intricacy to workforce management can be deploying highly rated efficient marketing/sales workforce to first time leads and the others to follow-up calls. 
-* 
 
