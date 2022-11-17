@@ -121,7 +121,7 @@ We used vector assembler method of PySpark to put all the features in one vector
 
 
 #### Modeling
-Following are the predictive models used to identify if the client will subscribe (yes/no) a term deposit (variable y). The confusion matrix in test set for each models are also shown below. Detailed code for the modeling can be found in this PySpark [Notebook](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/logreg.ipynb)
+Following are the predictive models used to identify if the client will subscribe (yes/no) a term deposit (variable y). In addition we find the optimum probability threshold which provides the maximum F1 score. The confusion matrix in test set for each models are also shown below. Detailed code for the modeling can be found in this PySpark [Notebook](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/logreg.ipynb)
 
 - Logistic Regression 
 <p align="center">
@@ -158,6 +158,11 @@ The best Model is Logistic Regression. The following is the test ROC curve:
 <p align="center">
 <img width="385" alt="image" src="https://user-images.githubusercontent.com/28525282/202321240-9c709acb-9900-47dc-8661-2c6f7740eadd.png">
 </p>
+
+We further analyse the Standard Coefficients of variables to identify variables that are most important
+
+<img width="522" alt="image" src="https://user-images.githubusercontent.com/28525282/202358351-85916c61-c64e-451d-88ce-33ea4b6f150a.png">
+
 
 ## Kmeans Clustering
 We initially decided on the number of clusters using Silhouette scores. We arrived at 3 clusters
