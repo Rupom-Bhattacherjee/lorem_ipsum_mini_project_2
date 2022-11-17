@@ -143,5 +143,11 @@ Here is the cluster plot based on the Principal components with most explained v
 
 <img width="419" alt="image" src="https://user-images.githubusercontent.com/28525282/202334019-9b86f00f-44dd-4c0d-97a9-a318f78d7ea6.png">
 
+## Prescriptive Recomendations
 
+Lead Generation is an effective technique to make team operations more efficient and effective. We approached this by scrutinizing the features that were deemed most important through our modeling. A combination of independent features and components of the important principal component values we analyzed for the purpose of these recomendations. Our findings were as follows:
+
+* It is of upmost importance to get the first contact with potential clients on-point. The chances of conversion is high during the first call with the recievers. Furthermore, it is also important to engage the clients in a longer conversation since this has a positive correlation with a positive lead conversion. 
+
+*
 
