@@ -91,8 +91,11 @@ There isn’t Null/Missing values in the dataset, but we have unknown values for
 
 #### Principal Component Analysis and Oversampling
 
-- From our  [descriptive study](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/descriptive_mini_project%20(2).ipynb) we found a high correlation between 4 columns based on the Heat Map Method. These columns are cons.price.idx, euribor3m, nr.employed,emp.var.rate. Therefore we applied [PCA](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/mini_project%20(2)%20smote%20copy.ipynb) on the numerical columns with 99% covariance to remove the multicolinearity between them.
-![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/pca_99.png)
+- From our  [descriptive study](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/descriptive_mini_project%20(2).ipynb) we found a high correlation between 4 columns based on the Heat Map Method. These columns are cons.price.idx, euribor3m, nr.employed,emp.var.rate. Therefore we applied [PCA](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/data_processing_pca_smote.ipynb) on the numerical columns with 99% covariance to remove the multicolinearity between them.
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/pca_99.png "Co-variance thresholding")
+
+The following figure shows the loadings of each principal components:
+![alt text](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/pca_loadings.jpeg "loadings of each principal components")
 
 - The dataset is also unbalanced regarding the target variable (36,548 y_no vs 4640 y_yes). So we oversampled the traing data using smote module from python imblearn library. In oversampling, for every observation in the majority class, we randomly select an observation from the minority class with replacement. The end result is the same number of observations from the minority and majority classes. The notebook for PCA and SMOTE analysis can be found [here](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/mini_project%20(2)%20smote%20copy.ipynb). The following figure shows the distribution of target variable in the training set before and after oversampling.
 ![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/smote_result.png)
