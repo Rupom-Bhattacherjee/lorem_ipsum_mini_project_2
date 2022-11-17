@@ -168,5 +168,9 @@ Here is the cluster plot based on the Principal components with most explained v
 
 <img width="419" alt="image" src="https://user-images.githubusercontent.com/28525282/202334019-9b86f00f-44dd-4c0d-97a9-a318f78d7ea6.png">
 
+## Prescriptive Recomendations 
 
+The efficiency of any marketing campaign is contingent on the efficacy of its Lead Generation mechanism. It directly correlates to workforce productivity, communication cost, strategic planning and even custmer brand judgement. Keeping this in mind, this study looks to design an effective mechanism of lead generation that the marketing team can leverage for higher return on investment. The key takeaways include:
+
+* 
 
