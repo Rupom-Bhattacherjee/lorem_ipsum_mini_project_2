@@ -179,7 +179,7 @@ We have identified the most important variables that affect the probability of a
 <img width="522" alt="image" src="https://user-images.githubusercontent.com/28525282/202360339-6112738d-9e0a-4cbf-8d95-abe6a244f9ee.png">
 </p>
 
-A 8-point strategy to the bank based on our study include:
+A 8-point strategy recomendations to the bank based on our study include:
 
 * The first reach-out to potential customers has the highest likelihood of lead conversion. In light of this, most of the marketing/sales workforce must be committed to first time leads. An additional intricacy to workforce management can be deploying highly rated efficient marketing/sales workforce to first time leads and the others to follow-up calls. 
 * The duration of the call with the potential customer is positively related to lead conversion. Training programs aimed at the marketing/sales workforce being able to hold conversations with clients must be pushed by the bank. 
