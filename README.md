@@ -180,7 +180,7 @@ The efficiency of any marketing campaign is contingent on the efficacy of its Le
 We have identified the most important variables that affect the probability of a client signing up for a term deposit leveraging a Logistic Classifier. 
 
 <p align="center">
-<img width="529" alt="image" src="https://user-images.githubusercontent.com/28525282/202362842-b959c4de-b3db-46ce-b84e-700b6ec2927c.png">
+<img width="535" alt="image" src="https://user-images.githubusercontent.com/28525282/202362977-0ebe74fe-f110-43d6-b37b-94d1387b1b2e.png">
 </p>
 
 A 8-point strategy recomendations to the bank based on our study include:
