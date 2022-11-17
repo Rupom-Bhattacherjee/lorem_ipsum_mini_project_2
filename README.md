@@ -74,17 +74,6 @@
 ##### Visualizing – Continuous Variables
 ![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/vis_num.png)
 
-###### Correlations for Continuous Variables
-![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/vis_corr_matrix.png)
-
-#### Categorical Variables
-
-- 'job', 'marital', 'education', 'default', 'housing', 'loan’
-'contact', 'month', 'day_of_week', 'poutcome', 'y'
-
-##### Visualizing – Categorical Variables
-![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/vis_cat.png)
-
 Inferences: 
 
 * The features are highly skewed. Hence, we need to perform scaling on all these data points.
@@ -96,22 +85,23 @@ Inferences:
 * We did not find any null values
 
 
+###### Correlations for Continuous Variables
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/vis_corr_matrix.png)
+
+#### Categorical Variables
+
+- 'job', 'marital', 'education', 'default', 'housing', 'loan’
+'contact', 'month', 'day_of_week', 'poutcome', 'y'
+
+##### Visualizing – Categorical Variables
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/vis_cat.png)
+
+
+
 ![image](https://user-images.githubusercontent.com/89224562/202365895-b7bde68a-661f-4ed2-9de0-405812ba8799.png)
 
-High correlation between 4 columns based on the Heat Map Method
-
-* cons.price.idx
-Euribor3m
-nr.employed
-emp.var.rate
-
-We will conduct PCA to combat the multicollinearity
 
 ![image](https://user-images.githubusercontent.com/89224562/202366135-5234edd0-08d5-4b04-bb98-53f1077779ee.png)
-
-
-
-![Uploading image.png…]()
 
 
 #### Missing values
