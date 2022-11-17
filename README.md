@@ -168,10 +168,6 @@ Here is the cluster plot based on the Principal components with most explained v
 
 <img width="419" alt="image" src="https://user-images.githubusercontent.com/28525282/202334019-9b86f00f-44dd-4c0d-97a9-a318f78d7ea6.png">
 
-PC1 has socio-economic variables such as Emp.Var.Rate, euribor3m loaded onto it while PC2 has previous interaction information such as Pdays (days since last contact) and Previous (no. of contacts in previous campaign).
-We can see a clear split in customer base using the clustering algorithm. In addition XYZ bank can utilize this segmentation to plan their marketing strategy.
-
-
 ## Prescriptive Recomendations 
 
 
@@ -180,10 +176,10 @@ The efficiency of any marketing campaign is contingent on the efficacy of its Le
 We have identified the most important variables that affect the probability of a client signing up for a term deposit leveraging a Logistic Classifier. 
 
 <p align="center">
-<img width="600" alt="image" src="https://user-images.githubusercontent.com/28525282/202362977-0ebe74fe-f110-43d6-b37b-94d1387b1b2e.png">
+<img width="522" alt="image" src="https://user-images.githubusercontent.com/28525282/202360339-6112738d-9e0a-4cbf-8d95-abe6a244f9ee.png">
 </p>
 
-A 8-point strategy recomendations to the bank based on our study include:
+A 8-point strategy has been recomended to the bank based on our study:
 
 * The first reach-out to potential customers has the highest likelihood of lead conversion. In light of this, most of the marketing/sales workforce must be committed to first time leads. An additional intricacy to workforce management can be deploying highly rated efficient marketing/sales workforce to first time leads and the others to follow-up calls. 
 * The duration of the call with the potential customer is positively related to lead conversion. Training programs aimed at the marketing/sales workforce being able to hold conversations with clients must be pushed by the bank. 
@@ -193,6 +189,6 @@ A 8-point strategy recomendations to the bank based on our study include:
 * Credit reports of potential customers needs to be analyzed for lead generation. Individuals with a housing loan are less likely to purchase term deposits. 
 * Education status of individuals has a direct relation to the likelihood of term deposit purchases. People who have a college degree are more likely to purchase these assets as compared to people with high school degrees. 
 
-To summarize, an ideal scenario for a marketing/sales team would be to target an individual who has a college degree, has no housing loans and has a white collar job. In addition to this, an aggressive communication strategy on Sunday, Wednesday, Friday and Saturday is recomended. It is important to note however that first-time communication with the potential clients needs to be longer and needs to be done by highly efficient/ highly rated sales/marketing individuals. In times of economic downturn, an expansive communication strategy needs be be adopted for individuals who are in the 32-38 age bracket. 
+To summarize, an ideal scenario for a marketing/sales team would be to target an individual who has a college degree, has no housing loans and has a white collar job. In addition to this, an aggressive communication strategy on Sunday, Wednesday, Friday and Saturday is recomended. It is important to note however that first-time communication with the potential clients needs to be longer and needs to be done by highly efficient/highly rated sales/marketing individuals. In addition to this, during times of economic downturn, an expansive communication strategy needs be be adopted for individuals who are in the 32-38 age bracket. An additional study a quater after the implementation of these recomendations is advised. 
 
 
