@@ -131,3 +131,14 @@ The best Model is Logistic Regression. The following is the test ROC curve
 ## Logistic Regression
 - We applied Logistic Regression algorithm which is the most commonly used algorithm for solving all classification problems.
 
+## Kmeans Clustering
+We initially decided on the number of clusters using Silhouette scores. We arrived at 3 clusters
+
+<img width="320" alt="image" src="https://user-images.githubusercontent.com/28525282/202333392-9ef30b91-7e2a-46c4-bd12-b589a695fd12.png">
+
+Here is the cluster plot based on the Principal components with most explained variance.
+
+<img width="419" alt="image" src="https://user-images.githubusercontent.com/28525282/202334019-9b86f00f-44dd-4c0d-97a9-a318f78d7ea6.png">
+
+
+
