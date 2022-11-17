@@ -1,4 +1,4 @@
-# Lorem_Opsum_Mini_Project_2
+# Lorem_Ipsum_Mini_Project_2
  # Term Deposit Opening Decision
  ### Outline
 - DataSet 
