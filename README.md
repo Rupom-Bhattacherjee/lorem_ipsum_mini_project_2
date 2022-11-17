@@ -150,11 +150,11 @@ Following are the predictive models used to identify if the client will subscrib
 
 ##### Model Comparison
 <p align="center">
- <img width="534" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/model_comparison.png">
+ <img width="534" alt="image" src="https://user-images.githubusercontent.com/28525282/202321298-6946f69a-bc20-4e3b-bee4-6c102c904185.png">
 </p> 
 
 
-The best Model is Logistic Regression with highest AUC score. The following is the test ROC curve with Logistic Regression model:
+The best Model is Logistic Regression. The following is the test ROC curve:
 <p align="center">
 <img width="385" alt="image" src="https://user-images.githubusercontent.com/28525282/202321240-9c709acb-9900-47dc-8661-2c6f7740eadd.png">
 </p>
@@ -170,12 +170,16 @@ Here is the cluster plot based on the Principal components with most explained v
 
 ## Prescriptive Recomendations 
 
-Using Logistic Classifier model we can identify most important variables that affect the probability of a client signing up for a term deposit.
+
+The efficiency of any marketing campaign is contingent on the efficacy of its Lead Generation mechanism. It directly correlates to workforce productivity, communication cost, strategic planning and even customer brand judgement. Keeping this in mind, this study looks to design an effective mechanism of lead generation that the marketing team can leverage for higher return on investment. 
+
+We have identified the most important variables that affect the probability of a client signing up for a term deposit leveraging a Logistic Classifier. 
+
 <p align="center">
 <img width="522" alt="image" src="https://user-images.githubusercontent.com/28525282/202360339-6112738d-9e0a-4cbf-8d95-abe6a244f9ee.png">
 </p>
 
-The efficiency of any marketing campaign is contingent on the efficacy of its Lead Generation mechanism. It directly correlates to workforce productivity, communication cost, strategic planning and even customer brand judgement. Keeping this in mind, this study looks to design an effective mechanism of lead generation that the marketing team can leverage for higher return on investment. The key takeaways include:
+A 8-point strategy to the bank based on our study include:
 
 * The first reach-out to potential customers has the highest likelihood of lead conversion. In light of this, most of the marketing/sales workforce must be committed to first time leads. An additional intricacy to workforce management can be deploying highly rated efficient marketing/sales workforce to first time leads and the others to follow-up calls. 
 * The duration of the call with the potential customer is positively related to lead conversion. Training programs aimed at the marketing/sales workforce being able to hold conversations with clients must be pushed by the bank. 
