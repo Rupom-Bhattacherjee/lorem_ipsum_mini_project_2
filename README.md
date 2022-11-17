@@ -186,7 +186,7 @@ Following are the predictive models used to identify if the client will subscrib
 </p> 
 
 
-The best Model is Logistic Regression. The following is the test ROC curve:
+The best Model is Logistic Regression with the highest AUC score. The following is the test ROC curve:
 <p align="center">
 <img width="385" alt="image" src="https://user-images.githubusercontent.com/28525282/202321240-9c709acb-9900-47dc-8661-2c6f7740eadd.png">
 </p>
