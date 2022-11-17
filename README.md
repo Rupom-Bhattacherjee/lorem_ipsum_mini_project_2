@@ -159,8 +159,6 @@ The best Model is Logistic Regression. The following is the test ROC curve:
 <img width="385" alt="image" src="https://user-images.githubusercontent.com/28525282/202321240-9c709acb-9900-47dc-8661-2c6f7740eadd.png">
 </p>
 
-
-
 ## Kmeans Clustering
 We initially decided on the number of clusters using Silhouette scores. We arrived at 3 clusters
 
@@ -171,10 +169,6 @@ Here is the cluster plot based on the Principal components with most explained v
 <img width="419" alt="image" src="https://user-images.githubusercontent.com/28525282/202334019-9b86f00f-44dd-4c0d-97a9-a318f78d7ea6.png">
 
 ## Prescriptive Recomendations 
-Using Logistic Classifier model we can identify most important variables that affect the probability of a client signing up for a term deposit.
-<p align="center">
-<img width="522" alt="image" src="https://user-images.githubusercontent.com/28525282/202360339-6112738d-9e0a-4cbf-8d95-abe6a244f9ee.png">
-</p>
 
 The efficiency of any marketing campaign is contingent on the efficacy of its Lead Generation mechanism. It directly correlates to workforce productivity, communication cost, strategic planning and even customer brand judgement. Keeping this in mind, this study looks to design an effective mechanism of lead generation that the marketing team can leverage for higher return on investment. The key takeaways include:
 
@@ -184,7 +178,8 @@ The efficiency of any marketing campaign is contingent on the efficacy of its Le
 * Monday, Tuesday and Thursday are the days of the week when lead conversion usually dips while weekends have a greater conversion rate. Workforce management wherein the marketing and sales team are deployed heavily during high productivity days and given time off during downturn days is suggested.
 * Profiling the potential customers by their occupation also has a high impact on lead generation. Blue collar workers are less likely to purchase term deposits. 
 * Credit reports of potential customers needs to be analyzed for lead generation. Individuals with a housing loan are less likely to purchase term deposits. 
-* Educa
+* Education status of individuals has a direct relation to the likelihood of term deposit purchases. People who have a college degree are more likely to purchase these assets as compared to people with high school degrees. 
 
-consumer confidence index - monthly 
+To summarize, an ideal scenario for a marketing/sales team would be to target an individual who has a college degree, has no housing loans and has a white collar job. In addition to this, an aggressive communication strategy on Sunday, Wednesday, Friday and Saturday is recomended. It is important to note however that first-time communication with the potential clients needs to be longer and needs to be done by highly efficient/ highly rated sales/marketing individuals. In times of economic downturn, an expansive communication strategy needs be be adopted for individuals who are in the 32-38 age bracket. 
+
 
