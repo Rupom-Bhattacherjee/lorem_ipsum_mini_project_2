@@ -87,7 +87,7 @@
 
 #### Missing values
 There isn’t Null/Missing values in the dataset, but we have unknown values for few categorical variables as seen in the visualization above. We kept the unknown values as they are. Because, these information is not known during a call is performed.
-![]https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/missing_values.jpg
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/missing_values.jpg)
 
 ### Data Preprocessing and Feature Engineering
 
@@ -124,15 +124,15 @@ We used vector assembler method of PySpark to put all the features in one vector
 Following are the predictive models used to identify if the client will subscribe (yes/no) a term deposit (variable y). The confusion matrix in test set for each models are also shown below. Detailed code for the modeling can be found in this PySpark [Notebook](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/code/logreg.ipynb)
 
 - Logistic Regression
-![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_log_reg.png)
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_log_reg.png =100x100)
 - Decision Tree Classifier 
-![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_dt.png)
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_dt.png =100x100)
 - Random Forest Classifier
-![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_RF.png)
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_RF.png =100x100)
 - Gradient Boosted Decision Trees
-![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_gbdt.png)
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_gbdt.png =100x100)
 - Factorization ML classifier
-![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_FMC.png)
+![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/cm_FMC.png =100x100)
 
 ##### Model Comparison
 <img width="534" alt="image" src="https://user-images.githubusercontent.com/28525282/202321298-6946f69a-bc20-4e3b-bee4-6c102c904185.png">
