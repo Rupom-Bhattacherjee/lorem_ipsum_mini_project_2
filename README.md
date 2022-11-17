@@ -108,8 +108,9 @@ We will conduct PCA to combat the multicollinearity problem
 #### Visualizing – Categorical Variables
 ![](https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/vis_cat.png)
 
-Unknown values for few categorical variables.
-We kept the unknown values as they are.
+* Unknown values for few categorical variables.
+* We kept the unknown values as they are.
+
 
 ![image](https://user-images.githubusercontent.com/89224562/202365895-b7bde68a-661f-4ed2-9de0-405812ba8799.png)
 
