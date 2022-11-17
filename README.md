@@ -168,6 +168,10 @@ Here is the cluster plot based on the Principal components with most explained v
 
 <img width="419" alt="image" src="https://user-images.githubusercontent.com/28525282/202334019-9b86f00f-44dd-4c0d-97a9-a318f78d7ea6.png">
 
+PC1 has socio-economic variables such as Emp.Var.Rate, euribor3m loaded onto it while PC2 has previous interaction information such as Pdays (days since last contact) and Previous (no. of contacts in previous campaign).
+We can see a clear split in customer base using the clustering algorithm. In addition XYZ bank can utilize this segmentation to plan their marketing strategy.
+
+
 ## Prescriptive Recomendations 
 
 
