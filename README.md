@@ -150,7 +150,7 @@ Following are the predictive models used to identify if the client will subscrib
 
 ##### Model Comparison
 <p align="center">
- <img width="534" alt="image" src="https://user-images.githubusercontent.com/28525282/202321298-6946f69a-bc20-4e3b-bee4-6c102c904185.png">
+ <img width="534" alt="image" src="https://github.com/Rupom-Bhattacherjee/lorem_ipsum_mini_project_2/blob/main/visualization/model_comparison.png">
 </p> 
 
 
