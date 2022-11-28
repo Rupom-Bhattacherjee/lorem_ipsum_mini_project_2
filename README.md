@@ -80,7 +80,7 @@ Inferences:
 
 * From the Pdays and Previous univariate distribution we can see that most of the clients in the dataset haven't been contacted in the current and previous campaigns
 
-* Duration of the call is right skewed, with most calls ending early. 
+* Duration of the call is left skewed, with most calls ending early. 
 
 * We did not find any null values
 
